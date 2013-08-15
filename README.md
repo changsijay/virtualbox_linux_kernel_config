@@ -25,8 +25,8 @@ Compiling Steps
 * modify `/etc/grub.d/40_custom` to correct filename
 * update-grub2
 
-00.basic
---------
+basic
+-----
 
 * boot into linux system and successfully login.
 * choose as few kernel options as possible.
@@ -34,5 +34,9 @@ Compiling Steps
     - memory used: 31M
 
 
+stage1
+------
+
+* # apt-get remove --purge virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 virtualbox-ose-guest-x11
 
 
