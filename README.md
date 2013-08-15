@@ -9,6 +9,9 @@ Target: Debian 7
 * Motherboard: default "PIIX3"
 * 1 CPU
 
+![grub boot menu]
+(https://github.com/changsijay/virtualbox_linux_config/blob/master/grub_boot_menu.png?raw=true)
+
 00.basic
 --------
 
