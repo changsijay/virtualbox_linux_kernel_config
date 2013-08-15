@@ -59,4 +59,12 @@ Moreover, remove vbox related package that not need:
 
 ``apt-get remove --purge virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 virtualbox-ose-guest-x11``
 
+Build steps:
+
+```bash
+make bzImage modules && \
+rm -rf /lib/modules/3.10.7.vbox-stage1 && \
+make modules_install && \
+cp arch/x86/boot/bzImage /boot/bzImage-3.10.7-stage1
+```
 
