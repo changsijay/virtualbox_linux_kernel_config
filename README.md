@@ -1,5 +1,5 @@
-virtualbox_linux_config
-=======================
+Linux Kernel config for Virtualbox
+==================================
 
 linux kernel config for virtualbox.
 Target: Debian 7
