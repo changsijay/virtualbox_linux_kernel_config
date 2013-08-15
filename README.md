@@ -30,6 +30,9 @@ basic
 
 * boot into linux system and successfully login.
 * choose as few kernel options as possible.
+
+Result:
+
     - kernel size: 1.1M
     - memory used: 31M
 
@@ -47,6 +50,11 @@ Enabled below items:
 * network card driver (e1000)
 * tcp/ip
 
+Result:
+
+    - kernel size: 1.3M
+    - memory used: 38M
+    
 Moreover, remove vbox related package that not need:
 
 ``apt-get remove --purge virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 virtualbox-ose-guest-x11``
