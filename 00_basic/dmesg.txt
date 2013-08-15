@@ -1,0 +1,204 @@
+Linux version 3.10.6.vbox (root@debian) (gcc version 4.7.2 (Debian 4.7.2-5) ) #3 Thu Aug 15 09:05:56 CST 2013
+Command line: BOOT_IMAGE=/boot/bzImage root=/dev/sda1 ro
+e820: BIOS-provided physical RAM map:
+BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+BIOS-e820: [mem 0x0000000100000000-0x000000011fffffff] usable
+NX (Execute Disable) protection: active
+SMBIOS 2.5 present.
+DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+e820: remove [mem 0x000a0000-0x000fffff] usable
+No AGP bridge found
+e820: last_pfn = 0x120000 max_arch_pfn = 0x400000000
+MTRR default type: uncachable
+MTRR variable ranges disabled:
+x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+CPU MTRRs all blank - virtualized system.
+e820: last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+Base memory trampoline at [ffff880000099000] 99000 size 24576
+init_memory_mapping: [mem 0x00000000-0x000fffff]
+ [mem 0x00000000-0x000fffff] page 4k
+BRK [0x01339000, 0x01339fff] PGTABLE
+BRK [0x0133a000, 0x0133afff] PGTABLE
+BRK [0x0133b000, 0x0133bfff] PGTABLE
+init_memory_mapping: [mem 0x11fe00000-0x11fffffff]
+ [mem 0x11fe00000-0x11fffffff] page 2M
+BRK [0x0133c000, 0x0133cfff] PGTABLE
+init_memory_mapping: [mem 0x11c000000-0x11fdfffff]
+ [mem 0x11c000000-0x11fdfffff] page 2M
+init_memory_mapping: [mem 0x100000000-0x11bffffff]
+ [mem 0x100000000-0x11bffffff] page 2M
+init_memory_mapping: [mem 0x00100000-0xdffeffff]
+ [mem 0x00100000-0x001fffff] page 4k
+ [mem 0x00200000-0xdfdfffff] page 2M
+ [mem 0xdfe00000-0xdffeffff] page 4k
+Zone ranges:
+  DMA      [mem 0x00001000-0x00ffffff]
+  DMA32    [mem 0x01000000-0xffffffff]
+  Normal   [mem 0x100000000-0x11fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00001000-0x0009efff]
+  node   0: [mem 0x00100000-0xdffeffff]
+  node   0: [mem 0x100000000-0x11fffffff]
+On node 0 totalpages: 1048462
+  DMA zone: 56 pages used for memmap
+  DMA zone: 21 pages reserved
+  DMA zone: 3998 pages, LIFO batch:0
+  DMA32 zone: 12488 pages used for memmap
+  DMA32 zone: 913392 pages, LIFO batch:31
+  Normal zone: 1792 pages used for memmap
+  Normal zone: 131072 pages, LIFO batch:31
+nr_irqs_gsi: 16
+e820: [mem 0xe0000000-0xfffbffff] available for PCI devices
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 1034105
+Kernel command line: BOOT_IMAGE=/boot/bzImage root=/dev/sda1 ro
+PID hash table entries: 4096 (order: 3, 32768 bytes)
+Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+Checking aperture...
+No AGP bridge found
+Memory: 4060832k/4718592k available (1648k kernel code, 524744k absent, 133016k reserved, 822k data, 540k init)
+NR_IRQS:4352 nr_irqs:256 16
+Console: colour VGA+ 80x25
+console [tty0] enabled
+tsc: Fast TSC calibration using PIT
+tsc: Detected 2457.107 MHz processor
+Calibrating delay loop (skipped), value calculated using timer frequency.. 4914.21 BogoMIPS (lpj=2457107)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 256
+Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32
+tlb_flushall_shift: 5
+CPU: Intel(R) Core(TM) i5-2400S CPU @ 2.50GHz (fam: 06, model: 2a, stepping: 07)
+Performance Events: unsupported p6 CPU model 42 no PMU driver, software events only.
+------------[ cut here ]------------
+WARNING: at kernel/time/clockevents.c:46 clockevent_delta2ns+0x2e/0x5e()
+CPU: 0 PID: 1 Comm: swapper Not tainted 3.10.6.vbox #3
+Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+ ffffffff81197f33 0000000000000048 ffffffff8101e691 ffffffff81016109
+ 0000000000000000 0000000000000000 7fffffff00000000 ffffffff8124fa40
+ 000001cf924633a0 0000000000000000 ffffffff8103f1d5 ffffffff811a0ca0
+Call Trace:
+ [<ffffffff81197f33>] ? dump_stack+0xd/0x17
+ [<ffffffff8101e691>] ? warn_slowpath_common+0x5a/0x72
+ [<ffffffff81016109>] ? default_inquire_remote_apic+0x1/0x1
+ [<ffffffff8103f1d5>] ? clockevent_delta2ns+0x2e/0x5e
+ [<ffffffff81273e3c>] ? setup_boot_APIC_clock+0x15d/0x364
+ [<ffffffff81274571>] ? APIC_init_uniprocessor+0xe6/0xea
+ [<ffffffff8126bcde>] ? kernel_init_freeable+0x61/0x17b
+ [<ffffffff81194121>] ? rest_init+0x65/0x65
+ [<ffffffff81194127>] ? kernel_init+0x6/0xc9
+ [<ffffffff8119a66a>] ? ret_from_fork+0x7a/0xb0
+ [<ffffffff81194121>] ? rest_init+0x65/0x65
+---[ end trace 6977881be75642b0 ]---
+APIC frequency too slow, disabling apic timer
+NET: Registered protocol family 16
+PCI: Using configuration type 1 for base access
+bio: create slab <bio-0> at 0
+vgaarb: loaded
+SCSI subsystem initialized
+libata version 3.00 loaded.
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PCI: Probing PCI hardware
+PCI: root bus 00: using default resources
+PCI: Probing PCI hardware (bus 00)
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x00000000-0xfffffffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+pci 0000:00:01.1: reg 20: [io  0xd000-0xd00f]
+pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+pci 0000:00:02.0: reg 10: [mem 0xe0000000-0xe0ffffff pref]
+vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+pci 0000:00:03.0: reg 10: [mem 0xf0000000-0xf001ffff]
+pci 0000:00:03.0: reg 18: [io  0xd010-0xd017]
+pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+pci 0000:00:04.0: reg 10: [io  0xd020-0xd03f]
+pci 0000:00:04.0: reg 14: [mem 0xf0400000-0xf07fffff]
+pci 0000:00:04.0: reg 18: [mem 0xf0800000-0xf0803fff pref]
+pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+pci 0000:00:06.0: reg 10: [mem 0xf0804000-0xf0804fff]
+pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+pci 0000:00:08.0: [8086:100e] type 00 class 0x020000
+pci 0000:00:08.0: reg 10: [mem 0xf0820000-0xf083ffff]
+pci 0000:00:08.0: reg 18: [io  0xd040-0xd047]
+pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+pci 0000:00:0d.0: reg 10: [io  0xd048-0xd04f]
+pci 0000:00:0d.0: reg 18: [io  0xd058-0xd05f]
+pci 0000:00:0d.0: reg 20: [io  0xd070-0xd07f]
+pci 0000:00:0d.0: reg 24: [mem 0xf0840000-0xf0841fff]
+pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
+pci 0000:00:01.0: PIIX/ICH IRQ router [8086:7000]
+PCI: pci_cache_line_size set to 64 bytes
+e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Switching to clocksource refined-jiffies
+pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+pci_bus 0000:00: resource 5 [mem 0x00000000-0xfffffffff]
+NET: Registered protocol family 1
+pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+pci 0000:00:01.0: Activating ISA DMA hang workarounds
+pci 0000:00:02.0: Boot video device
+PCI: setting IRQ 11 as level-triggered
+pci 0000:00:06.0: found PCI INT A -> IRQ 11
+pci 0000:00:06.0: sharing IRQ 11 with 0000:00:02.0
+PCI: CLS 0 bytes, default 64
+PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+software IO TLB [mem 0xdbff0000-0xdfff0000] (64MB) mapped at [ffff8800dbff0000-ffff8800dffeffff]
+platform rtc_cmos: registered platform RTC device (no PNP device found)
+msgmni has been set to 7931
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+io scheduler noop registered
+io scheduler deadline registered (default)
+ahci 0000:00:0d.0: version 3.0
+PCI: setting IRQ 5 as level-triggered
+ahci 0000:00:0d.0: found PCI INT A -> IRQ 5
+ahci: SSS flag set, parallel bus scan disabled
+ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+scsi0 : ahci
+ata1: SATA max UDMA/133 abar m8192@0xf0840000 port 0xf0840100 irq 5
+ata_piix 0000:00:01.1: version 2.13
+scsi1 : ata_piix
+scsi2 : ata_piix
+ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+mousedev: PS/2 mouse device common for all mice
+input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+ata3.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+ata3.00: configured for UDMA/33
+ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+ata1.00: 20971520 sectors, multi 128: LBA48 NCQ (depth 31/32)
+ata1.00: configured for UDMA/133
+scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+scsi 2:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+ sda: sda1 sda2 < sda5 >
+sd 0:0:0:0: [sda] Attached SCSI disk
+EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+Freeing unused kernel memory: 540k freed
+Switching to clocksource tsc
+EXT4-fs (sda1): re-mounted. Opts: (null)
+EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+Clocksource tsc unstable (delta = 205343480 ns)
+Switching to clocksource refined-jiffies
