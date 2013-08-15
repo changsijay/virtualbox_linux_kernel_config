@@ -37,6 +37,18 @@ basic
 stage1
 ------
 
-* # apt-get remove --purge virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 virtualbox-ose-guest-x11
+Enabled below items:
+
+* swap
+* kernel modules
+* ACPI
+* High Precision Event Timer
+* executable script (or many init scripts will failed to execute)
+* network card driver (e1000)
+* tcp/ip
+
+Moreover, remove vbox related package that not need:
+
+``apt-get remove --purge virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 virtualbox-ose-guest-x11``
 
 
