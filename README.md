@@ -34,7 +34,5 @@ Compiling Steps
     - memory used: 31M
 
 
-![info]
-(https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/00_basic/boot_screen-3.10.7.png)
 
 
