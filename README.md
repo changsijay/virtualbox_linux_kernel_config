@@ -30,8 +30,6 @@ Compiling Steps
 
 * boot into linux system and successfully login.
 * choose as few kernel options as possible.
-
-
     - kernel size: 1.1M
     - memory used: 31M
 
