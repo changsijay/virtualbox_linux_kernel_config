@@ -12,9 +12,6 @@ Target: Debian 7
 ![grub boot menu]
 (https://github.com/changsijay/virtualbox_linux_config/blob/master/grub_boot_menu.png?raw=true)
 
-![info]
-(https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/00_basic/boot_screen-3.10.7.png)
-
 Compiling Steps
 ---------------
 
@@ -31,5 +28,15 @@ Compiling Steps
 00.basic
 --------
 
-* boot into linux system
-* choose as few kernel options as possible
+* boot into linux system and successfully login.
+* choose as few kernel options as possible.
+
+
+    - kernel size: 1.1M
+    - memory used: 31M
+
+
+![info]
+(https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/00_basic/boot_screen-3.10.7.png)
+
+
