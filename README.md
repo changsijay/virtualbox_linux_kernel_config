@@ -68,3 +68,11 @@ make modules_install && \
 cp arch/x86/boot/bzImage /boot/bzImage-3.10.7-stage1
 ```
 
+stage2
+------
+
+remove some not need packages
+
+* apt-get remove --purge console-setup kbd console-setup-linux
+* apt-get autoremove --purge
+
