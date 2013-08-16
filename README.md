@@ -73,10 +73,5 @@ stage2
 
 remove some not need packages
 
-* apt-get remove --purge console-setup kbd console-setup-linux
-* apt-get remove --purge aptitude aptitude-common
-* apt-get remove --purge busybox iamerican ibritish ienglish-common ispell
-* apt-get remove --purge initramfs-tools module-init-tools linux-image-3.2.0-4-amd64 linux-image-amd64 acpi
-* apt-get remove --purge iptables laptop-detect
-* apt-get autoremove --purge
+
 
