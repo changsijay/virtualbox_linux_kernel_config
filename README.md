@@ -9,8 +9,8 @@ Target: Debian 7
 * Motherboard: default "PIIX3"
 * 1 CPU
 
-![grub boot menu]
-(https://github.com/changsijay/virtualbox_linux_config/blob/master/grub_boot_menu.png?raw=true)
+![stage2]
+(https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/stage2/boot_screen-3.10.7.png)
 
 Compiling Steps
 ---------------
@@ -71,7 +71,28 @@ cp arch/x86/boot/bzImage /boot/bzImage-3.10.7-stage1
 stage2
 ------
 
-remove some not need packages
+Enabled below items:
 
+* customized framebuffer bootup logo
+* ACPI event support(make send the shutdown signal can work when close vbox window)
+* USB storage support(EHCI need to install Oracle_VM_VirtualBox_Extension_Pack)
+* CDROM support(mount /dev/sr0 /media/cdrom0)
+* Access kernel config via /proc/config.gz(need to modprobe configs first)
+* vfat, ISO9660 fs support(for accessing USB and CDROM)
+* fuse fs support(for access exfat USB storage)
+
+
+Result:
+
+    - kernel size: 1.5M
+    - memory used: 46M
+
+
+```bash
+make bzImage modules && \
+rm -rf /lib/modules/3.10.7.vbox-stage2 && \
+make modules_install && \
+cp arch/x86/boot/bzImage /boot/bzImage-3.10.7-stage2
+```
 
 
