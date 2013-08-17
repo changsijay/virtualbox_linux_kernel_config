@@ -46,7 +46,7 @@ Enabled below items:
 * kernel modules
 * ACPI
 * High Precision Event Timer
-* executable script (or many init scripts will failed to execute)
+* executable script (otherwise many init scripts will failed to execute)
 * network card driver (e1000)
 * tcp/ip
 
@@ -87,6 +87,7 @@ Result:
     - kernel size: 1.5M
     - memory used: 46M
 
+Build steps:
 
 ```bash
 make bzImage modules && \
