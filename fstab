@@ -1,2 +1,4 @@
-/dev/sda1 / ext4 defaults 0 1
-/dev/sda5 none swap sw 0 0
+/dev/sda1 / ext4 errors=remount-ro 0 1
+/dev/sdb1 /home ext4 defaults 0 2
+/dev/sdb2 none swap sw 0 0
+/dev/sr0 /media/cdrom0 iso9660 user,noauto 0 0

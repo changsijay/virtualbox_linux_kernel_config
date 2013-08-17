@@ -8,3 +8,13 @@ menuentry 'Linux 3.10.7 vbox' {
     insmod ext2
     linux   /boot/bzImage-3.10.6 root=/dev/sda1 ro
 }
+
+menuentry 'Linux 3.10.7-stage1 vbox' {
+    insmod ext2
+    linux   /boot/bzImage-3.10.7-stage1 root=/dev/sda1 ro
+}
+
+menuentry 'Linux 3.10.7-stage2 vbox' {
+    insmod ext2
+    linux   /boot/bzImage-3.10.7-stage2 root=/dev/sda1 ro vga=791 quiet
+}
