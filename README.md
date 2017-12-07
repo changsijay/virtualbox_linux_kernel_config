@@ -15,6 +15,7 @@ Target: Debian 7
 Compiling Steps
 ---------------
 
+```
 * download kernel tar ball from https://www.kernel.org/, say `linux-3.10.7.tar.xz`
 * # apt-get install build-essential bc libncurses5-dev
 * # tar xf linux-3.10.7.tar.xz
@@ -24,6 +25,7 @@ Compiling Steps
 * # cp arch/x86/boot/bzImage /boot/bzImage-3.10.7
 * modify `/etc/grub.d/40_custom` to correct filename
 * update-grub2
+```
 
 basic
 -----
