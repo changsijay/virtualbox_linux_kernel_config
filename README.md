@@ -9,8 +9,7 @@ Target: Debian 7
 * Motherboard: default "PIIX3"
 * 1 CPU
 
-![stage2]
-(https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/stage2/boot_screen-3.10.7.png)
+![stage2](https://raw.github.com/changsijay/virtualbox_linux_kernel_config/master/stage2/boot_screen-3.10.7.png)
 
 Compiling Steps
 ---------------
